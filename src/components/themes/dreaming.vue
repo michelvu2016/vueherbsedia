@@ -3,7 +3,7 @@
         <header class="header">
             <div class='logo'>Healthy Living</div>
             <div class="navbar">
-                
+                <slot name="menubar"></slot>
             </div>
             <div class="headline">Living a heelthy life requires some dedication and consistency</div>
             
@@ -19,13 +19,6 @@
         </nav>
         <main class="main">
             <div>
-                <div>
-                    <h3>Brown Rice</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusantium similique odio modi? Veniam, facere. Corporis illo dolorum, minima ab quaerat libero molestiae eum quibusdam. Nesciunt sit reiciendis et amet distinctio tenetur molestiae veniam consequatur, est eius minus? Commodi numquam nesciunt ut minima architecto dolore voluptate, soluta ipsum, consectetur alias nostrum? Sequi earum ex totam commodi quas ipsam impedit ut libero aspernatur, eos quibusdam accusamus quam. Dolorem repellat commodi consectetur voluptas mollitia necessitatibus, nostrum nam quia possimus officia voluptate vero id placeat doloribus consequuntur beatae, culpa laboriosam, voluptatum deleniti magni officiis? Omnis, assumenda. Optio enim omnis voluptates corrupti, aliquam accusantium! Cum laboriosam, praesentium consequuntur aperiam laborum quod ipsam ut cupiditate quibusdam quos expedita molestiae earum, hic odio nihil dolores eos doloribus. Accusamus illo necessitatibus ab laborum itaque, quaerat ea amet similique temporibus optio delectus impedit recusandae modi consectetur. Deleniti libero id quod sint rem, enim deserunt error labore eligendi aspernatur molestias. Veritatis laboriosam tempora magni iure quaerat sunt hic excepturi libero, est quia, quas omnis asperiores harum esse earum mollitia pariatur enim reprehenderit iusto. Delectus quo nobis repudiandae asperiores, quisquam provident qui magni dolores consequuntur, eaque harum, in repellat perspiciatis dignissimos inventore tempora libero voluptatem repellendus at reprehenderit nesciunt rem?
-                    </p>
-                </div>
-
                 <slot name="main"></slot>
             </div>
             
@@ -111,6 +104,8 @@ export default {
         flex-direction: column;
         justify-content: stretch;
         align-items: stretch;
+        height: 100%;
+        box-sizing: border-box;
    }
    .side-bar-container {
        width: 100%;

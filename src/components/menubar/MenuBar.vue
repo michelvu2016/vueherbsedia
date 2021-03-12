@@ -1,16 +1,16 @@
 <template>
     <ul>
         <li>
-            Home
+            <router-link to="/home">Home</router-link>
         </li>
         <li>
-            Herb Info
+            <router-link to="/info">Info</router-link>
         </li>
         <li>
-            What's Wrong
+            <router-link to="ailment">Ailment</router-link>
         </li>
         <li>
-            Other Approach
+            <router-link to="/others">Other Approaches</router-link>
         </li>
     </ul>
 </template>
@@ -29,4 +29,20 @@ export default {
         justify-content: flex-end;
         align-items: center;
     }
+    ul > li {
+        padding-right: 1.5rem;
+        
+    }
+
+    li > a {
+        text-decoration: none;
+        color: rgb(49, 45, 41);
+        font-weight: 600;
+        font-size: 1.2em
+    }
+
+    li > a:hover {
+        color: red;
+    }
+
 </style>

@@ -1,11 +1,19 @@
 <template>
    <DreamngTheme>
-
+        <template v-slot:menubar>
+             <menu-bar></menu-bar>
+        </template>
+        <template v-slot:main>
+            <Home>
+            </Home>
+        </template>
    </DreamngTheme>
 </template>
 
 <script setup>
 import DreamngTheme from './components/themes/dreaming.vue'
+import MenuBar from './components/menubar/MenuBar.vue'
+import Home from './pages/home.vue'
 
 
 
